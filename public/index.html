@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="JS/app.js"></script>
+    <script src="js/mailer-front.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="#ex1">Stock global</a>
+        <a href="#ex2">Visualisation du stock</a>
+        <a href="#bill">Contactez-nous</a>
+    </div>
+
+
+    <!-- page produit -->
+    <div id="ex1" class="content">
+        <h1 class="title"><u>Gestion du stock - bizOnline</u></h1>
+        <p>Votre stock: <br></p>
+        <button id="btn_get_product" style="font-size:15px;color:green">Afficher les produits <i class="fa fa-check-square-o"></i></button>
+
+        <ul id="list_product">
+            <li class="item empty">aucun produit</li>
+        </ul>
+
+        <button id="btn_del_product" style="font-size:15px;color:red">Supprimer les produits <i class="fa fa-close"></i></button>
+
+        <br>
+
+        <div id="formcreate">
+            <fieldset>
+                <legend>
+                    <h2>Créer un nouveau produit</h2>
+                </legend>
+                <input type="text" id="new_product_name" placeholder="Nom">
+                <input type="number" id="new_product_price" placeholder="Prix">
+                <input type="text" id="new_product_description" placeholder="Description">
+                <input type="text" id="new_product_marque" placeholder="Marque">
+                <button id="new_product_btn" style="font-size:15px;color:green">Créer votre produit <i class="fa fa-plus-circle"></i></button>
+            </fieldset>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- page marque -->
+    <!--
+    <div id="ex2" class="content">
+        
+        <button id="btn_get_brand" style="font-size:15px">Afficher les marques <i class="fa fa-check-square-o"></i></button>
+        <ul id="list_brand">
+            <li class="item empty">aucunes marques</li>
+        </ul>
+        <button id="btn_del_brand" style="font-size:15px">Supprimer les marques <i class="fa fa-close"></i></button>
+
+        <br>
+
+        <div id="formcreate">
+            <fieldset>
+                <legend>
+                    <h2>Ajoutez une nouvelle marque</h2>
+                </legend>
+                <input type="text" id="new_brand_id">
+                <input type="text" id="new_brand_name">
+                <button id="new_brand_btn" style="font-size:15px">Créer une marque <i class="fa fa-plus-circle"></i></button>
+            </fieldset>
+
+        </div>
+    </div>
+-->
+
+
+
+
+    <!-- page contact -->
+    <!--
+    <h2 class="title"></h2>
+
+    <p></p>
+    <section id="bill">
+        <h1 class="title">Contact</h1>
+
+
+        <div class="form-group" id="FormContact">
+
+            <h1>Formulaire d'envoie de mail</h1>
+            <br>
+            <form class="form-vertical" role="form" method="post" action="/email">
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <input type="email" name="sender" id="sender" class="form-control" placeholder="Votre adresse mail" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <input type="text" name="subject" id="subject" class="form-control" placeholder="L'objet du mail" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <textarea rows="11" name="message" id="message" class="form-control" placeholder="Le contenu de votre mail"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <button type="submit" id="btn_sub" class="btn btn-primary">Envoyer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <hr>
+
+    </section>
+-->
+
+    <div class="footer">
+        <p>bizOnline</p>
+    </div>
+</body>
+
+</html>
